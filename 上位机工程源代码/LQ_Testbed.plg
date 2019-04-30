@@ -1,0 +1,132 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LQ_Testbed - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/LQ_Testbed.res" /d "NDEBUG" "D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\LQ_Testbed.rc"" 
+Creating temporary file "C:\Users\Tan\AppData\Local\Temp\RSP251.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/LQ_Testbed.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\ADOConn.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\Comm.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\Common.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\DataManageDlg.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\EvaluatorAnalysisDlg.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\EvluatorManageDlg.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\excel.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\font.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\iplotannotationx.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\iplotaxisx.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\iplotchannelx.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\iplotdatacursorx.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\iplotdataviewx.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\iplotlabelx.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\iplotlegendx.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\iplotlimitx.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\iplottablecolumnx.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\iplottablex.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\iplottoolbarx.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\iplotx.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\LinkEstimateDlg.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\LQ_Testbed.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\LQ_TestbedDlg.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\OptionDlg.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\picture.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\SceneConfigDlg.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\ServerComm.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\TestCustomDlg.cpp"
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\TestResultDisplayDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\Tan\AppData\Local\Temp\RSP251.tmp" 
+Creating temporary file "C:\Users\Tan\AppData\Local\Temp\RSP252.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/LQ_Testbed.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\文档\项目\08WSN链路质量测试平台\08WSN链路质量测试平台\上位机工程源程序\LQ_Testbed\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Tan\AppData\Local\Temp\RSP252.tmp" 
+Creating temporary file "C:\Users\Tan\AppData\Local\Temp\RSP253.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/LQ_Testbed.pdb" /machine:I386 /out:"Release/LQ_Testbed.exe" 
+".\Release\ADOConn.obj"
+".\Release\Comm.obj"
+".\Release\Common.obj"
+".\Release\DataManageDlg.obj"
+".\Release\EvaluatorAnalysisDlg.obj"
+".\Release\EvluatorManageDlg.obj"
+".\Release\excel.obj"
+".\Release\font.obj"
+".\Release\iplotannotationx.obj"
+".\Release\iplotaxisx.obj"
+".\Release\iplotchannelx.obj"
+".\Release\iplotdatacursorx.obj"
+".\Release\iplotdataviewx.obj"
+".\Release\iplotlabelx.obj"
+".\Release\iplotlegendx.obj"
+".\Release\iplotlimitx.obj"
+".\Release\iplottablecolumnx.obj"
+".\Release\iplottablex.obj"
+".\Release\iplottoolbarx.obj"
+".\Release\iplotx.obj"
+".\Release\LinkEstimateDlg.obj"
+".\Release\LQ_Testbed.obj"
+".\Release\LQ_TestbedDlg.obj"
+".\Release\OptionDlg.obj"
+".\Release\picture.obj"
+".\Release\SceneConfigDlg.obj"
+".\Release\ServerComm.obj"
+".\Release\StdAfx.obj"
+".\Release\TestCustomDlg.obj"
+".\Release\TestResultDisplayDlg.obj"
+".\Release\LQ_Testbed.res"
+]
+Creating command line "link.exe @C:\Users\Tan\AppData\Local\Temp\RSP253.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ADOConn.cpp
+Comm.cpp
+Common.cpp
+DataManageDlg.cpp
+EvaluatorAnalysisDlg.cpp
+EvluatorManageDlg.cpp
+excel.cpp
+font.cpp
+iplotannotationx.cpp
+iplotaxisx.cpp
+iplotchannelx.cpp
+iplotdatacursorx.cpp
+iplotdataviewx.cpp
+iplotlabelx.cpp
+iplotlegendx.cpp
+iplotlimitx.cpp
+iplottablecolumnx.cpp
+iplottablex.cpp
+iplottoolbarx.cpp
+iplotx.cpp
+Generating Code...
+Compiling...
+LinkEstimateDlg.cpp
+LQ_Testbed.cpp
+LQ_TestbedDlg.cpp
+OptionDlg.cpp
+picture.cpp
+SceneConfigDlg.cpp
+ServerComm.cpp
+TestCustomDlg.cpp
+TestResultDisplayDlg.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+LQ_Testbed.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{EC1F95DE-0F57-4BAC-9FEC-A9B4E414DC5B}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\LQ_Testbed.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\LQ_Testbed.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\LQ_Testbed.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\LQ_Testbed.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\LQ_Testbed.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\LQ_Testbed.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\LQ_Testbed.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\LQ_Testbed.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ADOConn.cpp" />
+    <ClCompile Include="Comm.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="DataManageDlg.cpp" />
+    <ClCompile Include="DisplayTopologyDlg.cpp" />
+    <ClCompile Include="EvaluatorAnalysisDlg.cpp" />
+    <ClCompile Include="EvluatorManageDlg.cpp" />
+    <ClCompile Include="excel.cpp" />
+    <ClCompile Include="font.cpp" />
+    <ClCompile Include="iplotannotationx.cpp" />
+    <ClCompile Include="iplotaxisx.cpp" />
+    <ClCompile Include="iplotchannelx.cpp" />
+    <ClCompile Include="iplotdatacursorx.cpp" />
+    <ClCompile Include="iplotdataviewx.cpp" />
+    <ClCompile Include="iplotlabelx.cpp" />
+    <ClCompile Include="iplotlegendx.cpp" />
+    <ClCompile Include="iplotlimitx.cpp" />
+    <ClCompile Include="iplottablecolumnx.cpp" />
+    <ClCompile Include="iplottablex.cpp" />
+    <ClCompile Include="iplottoolbarx.cpp" />
+    <ClCompile Include="iplotx.cpp" />
+    <ClCompile Include="LinkEstimateDlg.cpp" />
+    <ClCompile Include="LQ_Testbed.cpp" />
+    <ClCompile Include="LQ_TestbedDlg.cpp" />
+    <ClCompile Include="OptionDlg.cpp" />
+    <ClCompile Include="picture.cpp" />
+    <ClCompile Include="PowerDLG.cpp" />
+    <ClCompile Include="SceneConfigDlg.cpp" />
+    <ClCompile Include="ServerComm.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TestCustomDlg.cpp" />
+    <ClCompile Include="TestResultDisplayDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LQ_Testbed.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ADOConn.h" />
+    <ClInclude Include="Comm.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="DataManageDlg.h" />
+    <ClInclude Include="DisplayTopologyDlg.h" />
+    <ClInclude Include="EvaluatorAnalysisDlg.h" />
+    <ClInclude Include="EvluatorManageDlg.h" />
+    <ClInclude Include="excel.h" />
+    <ClInclude Include="font.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="HighResolutionTimer.h" />
+    <ClInclude Include="iplotannotationx.h" />
+    <ClInclude Include="iplotaxisx.h" />
+    <ClInclude Include="iplotchannelx.h" />
+    <ClInclude Include="iplotdatacursorx.h" />
+    <ClInclude Include="iplotdataviewx.h" />
+    <ClInclude Include="iplotlabelx.h" />
+    <ClInclude Include="iplotlegendx.h" />
+    <ClInclude Include="iplotlimitx.h" />
+    <ClInclude Include="iplottablecolumnx.h" />
+    <ClInclude Include="iplottablex.h" />
+    <ClInclude Include="iplottoolbarx.h" />
+    <ClInclude Include="iplotx.h" />
+    <ClInclude Include="LinkEstimateDlg.h" />
+    <ClInclude Include="LQ_Testbed.h" />
+    <ClInclude Include="LQ_TestbedDlg.h" />
+    <ClInclude Include="OptionDlg.h" />
+    <ClInclude Include="picture.h" />
+    <ClInclude Include="PowerDLG.h" />
+    <ClInclude Include="Protocol.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SceneConfigDlg.h" />
+    <ClInclude Include="ServerComm.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TestCustomDlg.h" />
+    <ClInclude Include="TestResultDisplayDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\1定制方案.ico" />
+    <Image Include="res\1节点管理.ico" />
+    <Image Include="res\2定制方案.ico" />
+    <Image Include="res\2结果显示.ico" />
+    <Image Include="res\3开始测试.ico" />
+    <Image Include="res\3结果显示.ico" />
+    <Image Include="res\3链路评估.ico" />
+    <Image Include="res\4开始测试.ico" />
+    <Image Include="res\4结果显示.ico" />
+    <Image Include="res\4链路评估.ico" />
+    <Image Include="res\4链路预测.ico" />
+    <Image Include="res\5查询结果.ico" />
+    <Image Include="res\5链路评估.ico" />
+    <Image Include="res\5链路预测.ico" />
+    <Image Include="res\6导出数据.ico" />
+    <Image Include="res\6查询结果1.ico" />
+    <Image Include="res\6链路预测.ico" />
+    <Image Include="res\7导出数据.ico" />
+    <Image Include="res\7查询结果.ico" />
+    <Image Include="res\8导出数据.ico" />
+    <Image Include="res\9退出系统.ico" />
+    <Image Include="res\bottom.bmp" />
+    <Image Include="res\LQ_Testbed.ico" />
+    <Image Include="res\ooopic_1452188916.bmp" />
+    <Image Include="res\serial.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\LQ_Testbed.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
