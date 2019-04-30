@@ -1,0 +1,336 @@
+<?xml version="1.0" ?><interfacedef loc="41:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" nicename="tos.interfaces.LowPowerListening" qname="LowPowerListening">
+      <documentation loc="32:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc">
+        <short>
+ Low Power Listening interface
+
+ </short>
+        <long>
+ Low Power Listening interface
+
+ @author Jonathan Hui
+ @author David Moss
+</long>
+      </documentation>
+      <function command="" loc="58:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="getLocalSleepInterval" provided="0" ref="0x7d521c08">
+        <documentation loc="55:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc">
+          <short>
+ </short>
+          <long>
+ @return the local node's sleep interval, in [ms]
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.interfaces.LowPowerListening" qname="LowPowerListening"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x7ee60958"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="114:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="getRxDutyCycle" provided="0" ref="0x7d51b2a0">
+        <documentation loc="109:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc">
+          <short>
+ </short>
+          <long>
+ @param 'message_t* ONE msg'
+ @return the destination node's duty cycle configured in this message
+     in units of [percentage*100]
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.interfaces.LowPowerListening" qname="LowPowerListening"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x7ee60958"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7d917c50"/>
+                <typename><typedef-ref name="message_t" ref="0x7d915a68"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="114:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="msg" ref="0x7d51b148">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7d917c50"/>
+                <typename><typedef-ref name="message_t" ref="0x7d915a68"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="130:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="sleepIntervalToDutyCycle" provided="0" ref="0x7d51a4f0">
+        <documentation loc="124:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc">
+          <short>
+ Convert a sleep interval, in units of [ms], to a duty cycle
+ in units of [percentage*100]
+ </short>
+          <long>
+ Convert a sleep interval, in units of [ms], to a duty cycle
+ in units of [percentage*100]
+ @param sleepInterval The sleep interval in units of [ms]
+ @return The duty cycle in units of [percentage*100]
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.interfaces.LowPowerListening" qname="LowPowerListening"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x7ee60958"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x7ee60958"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="130:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="sleepInterval" ref="0x7d51a398">
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x7ee60958"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="81:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="getLocalDutyCycle" provided="0" ref="0x7d520898">
+        <documentation loc="78:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc">
+          <short>
+ </short>
+          <long>
+ @return this node's radio duty cycle rate, in units of [percentage*100]
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.interfaces.LowPowerListening" qname="LowPowerListening"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x7ee60958"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="90:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="setRxSleepInterval" provided="0" ref="0x7d51e170">
+        <documentation loc="84:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc">
+          <short>
+ Configure this outgoing message so it can be transmitted to a neighbor mote
+ with the specified Rx sleep interval.</short>
+          <long>
+ Configure this outgoing message so it can be transmitted to a neighbor mote
+ with the specified Rx sleep interval.
+ @param 'message_t* ONE msg' Pointer to the message that will be sent
+ @param sleepInterval The receiving node's sleep interval, in [ms]
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.interfaces.LowPowerListening" qname="LowPowerListening"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7d917c50"/>
+                <typename><typedef-ref name="message_t" ref="0x7d915a68"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x7ee60958"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="90:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="msg" ref="0x7d520d58">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7d917c50"/>
+                <typename><typedef-ref name="message_t" ref="0x7d915a68"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="90:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="sleepIntervalMs" ref="0x7d51e010">
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x7ee60958"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="76:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="setLocalDutyCycle" provided="0" ref="0x7d520240">
+        <documentation loc="60:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc">
+          <short>
+ Set this node's radio duty cycle rate, in units of [percentage*100].</short>
+          <long>
+ Set this node's radio duty cycle rate, in units of [percentage*100].
+ For example, to get a 0.05% duty cycle,
+ &lt;code&gt;
+   call LowPowerListening.setDutyCycle(5);
+ &lt;/code&gt;
+
+ For a 100% duty cycle (always on),
+ &lt;code&gt;
+   call LowPowerListening.setDutyCycle(10000);
+ &lt;/code&gt;
+
+ This is the equivalent of setting the local sleep interval explicitly.
+ 
+ @param dutyCycle The duty cycle percentage, in units of [percentage*100]
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.interfaces.LowPowerListening" qname="LowPowerListening"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x7ee60958"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="76:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="dutyCycle" ref="0x7d5200e8">
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x7ee60958"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="107:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="setRxDutyCycle" provided="0" ref="0x7d51c778">
+        <documentation loc="98:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc">
+          <short>
+ Configure this outgoing message so it can be transmitted to a neighbor mote
+ with the specified Rx duty cycle rate.</short>
+          <long>
+ Configure this outgoing message so it can be transmitted to a neighbor mote
+ with the specified Rx duty cycle rate.
+ Duty cycle is in units of [percentage*100], i.e. 0.25% duty cycle = 25.
+ 
+ @param 'message_t* ONE msg' Pointer to the message that will be sent
+ @param dutyCycle The duty cycle of the receiving mote, in units of 
+     [percentage*100]
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.interfaces.LowPowerListening" qname="LowPowerListening"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7d917c50"/>
+                <typename><typedef-ref name="message_t" ref="0x7d915a68"/></typename>
+              </type-tag>
+            </type-pointer>
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x7ee60958"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="107:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="msg" ref="0x7d51c3e8">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7d917c50"/>
+                <typename><typedef-ref name="message_t" ref="0x7d915a68"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+          <variable loc="107:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="dutyCycle" ref="0x7d51c618">
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x7ee60958"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="122:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="dutyCycleToSleepInterval" provided="0" ref="0x7d51bca8">
+        <documentation loc="116:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc">
+          <short>
+ Convert a duty cycle, in units of [percentage*100], to
+ the sleep interval of the mote in milliseconds
+ </short>
+          <long>
+ Convert a duty cycle, in units of [percentage*100], to
+ the sleep interval of the mote in milliseconds
+ @param dutyCycle The duty cycle in units of [percentage*100]
+ @return The equivalent sleep interval, in units of [ms]
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.interfaces.LowPowerListening" qname="LowPowerListening"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x7ee60958"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x7ee60958"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="122:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="dutyCycle" ref="0x7d51bb50">
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x7ee60958"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="96:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="getRxSleepInterval" provided="0" ref="0x7d51ec08">
+        <documentation loc="92:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc">
+          <short>
+ </short>
+          <long>
+ @param 'message_t* ONE msg'
+ @return the destination node's sleep interval configured in this message
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.interfaces.LowPowerListening" qname="LowPowerListening"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x7ee60958"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7d917c50"/>
+                <typename><typedef-ref name="message_t" ref="0x7d915a68"/></typename>
+              </type-tag>
+            </type-pointer>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="96:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="msg" ref="0x7d51eab0">
+            <type-pointer alignment="I:2" size="I:2">
+              <type-tag alignment="I:1" size="I:52"><nx_struct-ref name="message_t" ref="0x7d917c50"/>
+                <typename><typedef-ref name="message_t" ref="0x7d915a68"/></typename>
+              </type-tag>
+            </type-pointer>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="53:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="setLocalSleepInterval" provided="0" ref="0x7d5215d8">
+        <documentation loc="43:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc">
+          <short>
+ Set this this node's radio sleep interval, in milliseconds.</short>
+          <long>
+ Set this this node's radio sleep interval, in milliseconds.
+ Once every interval, the node will sleep and perform an Rx check 
+ on the radio.  Setting the sleep interval to 0 will keep the radio
+ always on.
+
+ This is the equivalent of setting the local duty cycle rate.
+
+ @param sleepIntervalMs the length of this node's Rx check interval, in [ms]
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.interfaces.LowPowerListening" qname="LowPowerListening"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x7ee60958"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="53:/opt/tinyos-2.x/tos/interfaces/LowPowerListening.nc" name="sleepIntervalMs" ref="0x7d521480">
+            <type-int alignment="I:2" cname="unsigned int" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x7ee60958"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+    </interfacedef>
